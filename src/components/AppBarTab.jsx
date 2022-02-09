@@ -1,15 +1,12 @@
-import { Text, Pressable, StyleSheet } from 'react-native';
-
-const styles = StyleSheet.create({
-  title: {
-    color: '#fff',
-  },
-});
+import { Pressable } from 'react-native';
+import Text from './Text';
 
 const AppBarTab = () => {
   return (
     <Pressable>
-      <Text style={styles.title}>Repositories</Text>
+      <Text color="textSecondary" fontSize="subheading" fontWeight="bold">
+        Repositories
+      </Text>
     </Pressable>
   );
 };
